@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="b.css" rel="stylesheet" type="text/css">
+
+    <style>
+       table{
+        width: 50%;
+       }
+        thead{
+            background-color: black;
+            color: cyan;
+        }
+        td,th{
+            padding: 10px 20px;
+            text-align: center;
+            word-wrap: break-word;
+            width: 60px;
+        }
+        
+    </style>
+  </head>
+  <body>
+   
+   
+   <div class="container mt-3">
+  <div class="mt-4 p-5  text-white rounded">
+    <h1 class="text-center text-info bg-dark p-2">Contact Form</h1>
+  </div>
+</div>
+   
+<div class="container bg-info mt-3 mb-3 pb-3">
+
+<div class="row g-3 ">
+<div class="col-md-6">
+    <label for="txtName" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="txtName">
+  </div>
+  <div class="col-md-6">
+    <label for="txtFname" class="form-label">Father Name</label>
+    <input type="text" class="form-control" id="txtFname">
+  </div>
+   
+  <div class="col-md-6">
+    <label for="txtEmail" class="form-label">Email</label>
+    <input type="email" class="form-control" id="txtEmail">
+  </div>
+  <div class="col-md-6">
+    <label for="txtPassword" class="form-label">Password</label>
+    <input type="password" class="form-control" id="txtPassword">
+  </div>
+  <div class="col-12">
+    <label for="txtAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="txtAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+     <label for="txtCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="txtCity">
+  </div>
+  <div class="col-md-4">
+   <fieldset class="row ">
+    <legend class="col-form-label col-sm-2 pt-0">Work</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="on-site" checked>
+        <label class="form-check-label" for="gridRadios1">
+          On-site
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="hybrid">
+        <label class="form-check-label" for="gridRadios2">
+          Hybrid
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="remote" disabled>
+        <label class="form-check-label" for="gridRadios3">
+          Remote
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  </div>
+  <div class="col-md-4">
+    <label for="txtSkills" class="form-label">Skills</label>
+    <select id="txtSkills" class="form-select">
+      <option selected>Choose...</option>
+      <option value="Science">Science</option>
+	  <option value="Maths">Maths</option>
+	  <option value="Arts">Arts</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="txtExperience" class="form-label">Total Experience</label>
+    <input type="number" class="form-control" id="txtExperience">
+  </div>
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="msg"></textarea>
+  <label for="floatingTextarea">Leave your message here</label>
+</div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Keep me Updated
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-dark" onclick="getData()">Send Now</button>
+  </div>
+
+</div>
+</div>
+   
+
+    <table class="table table-bordered border-primary" id="tbl">
+        <thead>
+          <tr>
+            <td scope="col">srNo.</td>
+            <td scope="col">Full Name</td>
+            <td scope="col">Father Name</td>
+            <td scope="col">Email</td>
+            <td scope="col">Password</td>
+            <td scope="col">Address</td>
+            <td scope="col">city</td>
+            <td scope="col">Location</td>
+            <th scope="col">Skills</th>
+            <td scope="col">Experience</td>
+            <td scope="col">Message</td>
+            <td scope="col">Delete</td>
+          </tr>
+        </thead>
+      </table>
+
+   
+   
+    <script src="b.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
